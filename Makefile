@@ -53,6 +53,10 @@ $(info Using $(CC))
 
 .PHONY: all
 
+# Ensure that the directories exist
+$(shell mkdir -p $(OBJ_DIR))
+$(shell mkdir -p $(EXE_DIR))
+
 all: modem.o
 
 tests: test_modem
