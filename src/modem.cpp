@@ -1,4 +1,5 @@
 #include "modem.h"
+#include <iostream>
 
 // Constructor
 Modem::Modem(std::string dev, std::string apn, std::string user, std::string pass)
@@ -21,6 +22,14 @@ void Modem::disconnect() {
 bool Modem::isConnected() {
     // code to check the connection status goes here
     return false;
+}
+
+// Print the modem's private variables
+void Modem::print() {
+    std::cout << "Device: " << device << std::endl;
+    std::cout << "APN: " << apn << std::endl;
+    std::cout << "User: " << user << std::endl;
+    std::cout << "Pass: " << pass << std::endl;
 }
 
 // Send an HTTP request

@@ -20,6 +20,9 @@ class Modem {
     // Check if the modem is connected to the internet
     bool isConnected();
 
+    // Print the modem's private variables
+    void print();
+
     // Send an HTTP request
     std::string sendRequest(std::string request);
 };
